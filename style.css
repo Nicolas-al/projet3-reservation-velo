@@ -1,0 +1,334 @@
+body{
+    background: white;
+}
+
+#menu_container{
+    background: rgb(17, 13, 5);
+    overflow-y: hidden;
+    margin : -20px -20px;
+    height: 120px;
+    display: flex;
+}
+#bicycle {
+    margin: auto;
+}
+#bicycle img {
+    width: 80px;
+    background-color: #E67E22;
+    color: #E67E22;
+}
+h1{
+    color: #E67E22;
+    font-family: 'Lobster', cursive;
+
+}
+
+#menu{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+}
+.menu{
+    margin-left: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.menu a {
+    color: #E67E22;
+    text-decoration: none;
+}
+
+.slider_container {
+    
+    background: red;
+    width: 700px;
+    height: 480px;
+    /*overflow: hidden;*/
+    margin: auto;
+    margin-top: 30px;
+    
+
+}
+.slides {
+    position: relative;
+    width: 700px;
+    height: 480px;
+    margin: auto;
+    opacity: 0;
+    
+}
+#slides_1{
+    z-index: 5;
+    opacity: 1;
+}
+#slides_2{
+    z-index: 4;
+    margin-top: -480px;
+    background-color: black;
+    display: flex;
+}
+#slides_2 img{
+    left: 110px;
+    height: 70px;
+    width: 50px;
+    position: relative;
+    margin-left: 80px;
+}
+#slides_2 #img1{
+    margin-top: 60px;
+}
+#slides_2 #img2{
+    margin-top: 150px;
+}
+#slides_2 #img3{
+    margin-top: 270px;
+}
+.img p{
+    color: white;
+    margin-left: 20px; 
+}
+#slides_3{
+    z-index: 3;
+    margin-top: -480px;
+}
+#slides_4{
+    z-index: 2;
+    margin-top: -480px
+}
+#slides_5{
+    z-index: 1;
+    margin-top: -480px
+}
+.slides img {
+    width: 700px;
+    height: 480px;
+}
+#arrow{
+    position: relative;
+    top: -255px;
+    display: flex;
+}
+
+#fa-angle-left{
+    position: relative;
+    z-index: 6;
+    margin-left: 20px;
+    margin-top: 0;
+    height: 40px;
+    width: 30px;
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+}
+#fa-angle-right{
+    position: relative;  
+    z-index: 6;
+    margin-left: 600px;
+    margin-top: 0;
+    width: 30px;
+    background-color: black;
+    color: orange;
+    border:1px solid orange;
+}
+
+#play_pause{
+    position: relative;
+    z-index: 6;
+    display: flex;
+    margin-left: 30px;
+    top: -501px;
+}
+
+#pause{
+    background: black;
+    color: orange;
+    border: 1px solid orange;
+    width: 40px;
+}
+#play{
+    background: black;
+    color: orange;
+    border: 1px solid orange;
+    width: 40px;
+    height: 30px;
+}
+
+/* ---------- MAP ------------- */
+
+#map_container{
+    margin-top: 100px;
+    display: flex;
+    margin-left: -10%;
+}
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+    height: 450px;
+    width: 70%;
+    margin-left: 10%;
+    border: 2px black solid;
+    z-index: 1;
+    
+}
+#infos_marqueurs{
+    background: #372F23;
+    border: 2px solid black;
+    border-left: 0px;
+    margin-left: 0px;
+    width: 300px;
+    padding-left : 20px;
+    padding-right: 40px;
+}
+#infos_station{
+    color: wheat;
+    text-align: center;
+}
+.div{
+    display: flex;
+    margin-top: 30px;
+    width: 120%;
+}
+.infos{
+    color: wheat;
+    margin-top : 0px;
+}
+span{
+    color: wheat;
+    display: block;
+    width: 65px;
+}
+#adresse{
+    text-transform: lowercase;
+}
+#velos_dispo{
+    display: flex;
+    margin-top: 30px;
+}
+
+#places_dispo{
+    display: flex;
+    margin-top: 30px;
+}
+
+.fa-bicycle{
+    font-size : 28px;
+    color: #E67E22;
+}
+
+#velos_dispo #nombre_velos{
+    margin-top: 0px;
+    margin-left: 20px;
+    color: wheat;
+    margin: auto;
+    font-weight: bold;
+}
+
+
+.fa-parking{
+    font-size : 28px;
+    color: #E67E22;
+}
+
+#places_dispo #nombre_places{
+    margin-top: 0px;
+    margin-left: 20px;
+    color: wheat;
+    margin: auto;
+    font-weight: bold;
+}
+#btn_resa, #btn_resa:focus{
+    margin-top: 50px;
+    color: black;
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: wheat;
+    box-shadow: inset 0 0 0 0 #f7a130;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+
+}
+#btn_resa:hover {
+    box-shadow: inset 150px 50px 0 0 #f7a130;;
+    background-color:#E67E22;
+}
+
+#canvas_container {
+    opacity: 0;
+    text-align: center;
+    background: white;
+    width: 110%;
+    height: 290px;
+    margin-top: -350px;
+    border: 4px solid black;
+    box-shadow: 3px 2px 3px;
+}
+#canvas{
+    display: block;
+    margin: auto;
+    border: 1px solid #000;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#titre_resa {
+text-align: center;
+background: #E67E22;
+}
+
+
+
+#resa{
+    background: #372F23;
+    border-color: rgb(80, 72, 61);
+    box-shadow: 2px 1px rgb(80, 72, 61);
+    height: 180px;
+    width: 100%;
+    opacity: 1;
+}
+#titre2_resa{
+    display: flex;
+    height: 35%;
+    background: #E67E22;
+}
+#titre2_resa p{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 25%;
+    
+}
+#titre2_resa p span{
+    margin-top: 6px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+#titre2_resa h2 {
+color: black;
+text-transform: capitalize;
+margin-left: 4%;
+margin-top: 0px;
+padding-top: 3%;
+
+}
+#infos_resa {
+color:wheat;
+position: relative;
+width : 80%;
+margin: auto;
+margin-top: 20px;
+line-height: 1.9;
+}
+
+#heure {
+    color: #E67E22;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    top : -30%;
+    float: right;
+    text-decoration: none;
+}
