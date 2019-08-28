@@ -6,6 +6,7 @@ class CanvasObjet {
     this.ctx.strokeStyle = "#AD0E16";
     this.ctx.lineWidth = 10;
     this.draw = false;
+    this.validSign = "";
     this.mousePosition = {
       x: 0,
       y: 0
@@ -37,7 +38,6 @@ class CanvasObjet {
        nomElt.style.marginTop = "Opx";
        let adresseElt = document.getElementById("div_adresse");
        adresseElt.style.marginTop = "5px";
-
        let placesDispoElt = document.getElementById("places_dispo");
        placesDispoElt.style.marginTop = "10px";
        let VeloDispoElt = document.getElementById("velos_dispo");
@@ -68,12 +68,13 @@ console.log("nicolas");
     this.mousePosition = this.getMousePos(event);
     this.ctx.beginPath();
     this.ctx.moveTo(this.mousePosition.x, this.mousePosition.y);
-    console.log(this.mousePosition);
-    console.log(this.mousePosition.x);
-    
+    if (this.mousePosition != 0) {
+      this.validateButton.removeAttribute("disabled");
+      console.log(this.validSign);
+      console.log(this.mousePosition);
+    }
   }
   mouseMove() {
-    console.log(this.mousePosition);
     if (this.draw === true) {
     this.mousePosition = this.getMousePos(event);
     //let x = this.mousePosition.x;
@@ -81,7 +82,7 @@ console.log("nicolas");
     this.dessiner(this.mousePosition.x, this.mousePosition.y);
   }
 };
-  mouseUp() {
+  mouseUp() {   
     this.draw = false;
   }
 
