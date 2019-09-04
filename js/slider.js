@@ -12,16 +12,15 @@ class Slider {
         this.lectureAuto = "";
     };
     init() { 
-    this.lectureAuto = setInterval(this.defiler.bind(this), this.duration);  
+    this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);  
     this.clickNextImage = this.arrowRight.addEventListener("click", this.nextImage.bind(this));
     this.clickPreviousImage = this.arrowLeft.addEventListener("click", this.previousImage.bind(this));
     this.clickPlay = this.play.addEventListener("click", this.playSlides.bind(this));
     this.clickPause = this.pause.addEventListener("click", this.pauseSlides.bind(this));
-    
     document.addEventListener("keydown", this.clavier.bind(this));
 };
-
-    defiler() {
+//---délilement des slides---//
+    scrollSlides() {
            this.slides[this.index].style.opacity = 0;
            this.index;
            if (this.index < this.slides.length - 1){
@@ -33,6 +32,7 @@ class Slider {
              this.slides[this.index].style.opacity = 1;
           
         }
+    //---Image suivante---//    
     nextImage() {
         clearInterval(this.lectureAuto);
 
@@ -42,9 +42,10 @@ class Slider {
             this.index = 0;  
         }
         this.slides[this.index].style.opacity = 1;
-        this.lectureAuto = setInterval(this.defiler.bind(this), this.duration);
+        this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
 
     }
+    //---Image précédente---//
     previousImage() {
         clearInterval(this.lectureAuto);
         this.slides[this.index].style.opacity = 0;
@@ -53,17 +54,18 @@ class Slider {
             this.index = 4;  
         }
         this.slides[this.index].style.opacity = 1;
-        this.lectureAuto = setInterval(this.defiler.bind(this), this.duration);
+        this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
     }
-
+    //---pause du défilement des slides---//
     pauseSlides() {
         clearInterval(this.lectureAuto);
     }
+    //---demarrer défilement des slides--//
     playSlides() {
         clearInterval(this.lectureAuto);
-        this.lectureAuto = setInterval(this.defiler.bind(this), this.duration);
+        this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
     }
-
+    //---activer les fonction de slide suivant et précédent avec les touches clavier---//
     clavier(e) {   
         if (e.keyCode === 39){
             this.nextImage(); 

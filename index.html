@@ -19,50 +19,129 @@
     <header id="menu_container">
         <div id="bicycle"><img src="icones/bicycle.png" alt="cycliste">
         </div>
-        <h1>Velo Nantes</h1>    
+        <div>
+        <h1>Bike City Nantes</h1>
+        
         <ul id="menu">
             <li class="menu">
-                <a href="#slider_container">infos</a>
+                <img src="icones/icons8-manuel-utilisateur-50.png" alt="icone manuel utilisateur" id="Fonctionnement">
+                <a href="#slider_container">fonctionnement</a>
             </li>
             <li class="menu">
-                <a href="#map_container">géolocalisation velo</a>
+                <img src="icones/icons8-marqueur-40.png" alt="icone marqueur" id="Marker">
+                <a href="#map_container">Sélectionner une station</a>
             </li>
             <li class="menu">
+                <img src="icones/icons8-réservation-50.png" alt="icone réservation" id="Resa">
                 <a href="#container_canvas">Réservation</a>
             </li>
         </ul>
+        </div>
     </header>
     <section class="slider_container">
         <div class="slides" id="slides_1">
-            <!---<img src="icones/icons8-écran-tactile-smartphone-64.png">
-                <img src="icones/icons8-ordinateur-portable-100.png">
-                <img src="icones/icons8-parking-à-vélos-100.png">
-                <img src="icones/icons8-piste-cyclable-96 (1).png">--->
-            <img src="7797451437_cathedrale-saint-pierre-et-saint-paul-de-nantes.jpg" alt="">
+            <div id="images_slide1">
+                <div id="barre"></div>
+                <div id="barre_1"></div>
+                <div id="barre_2"></div>
+                <div id="barre_3"></div>
+                <div id="barre_4"></div>
+
+                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="reservation.png" alt="" id="resa_slide1">
+                <img src="carte-velo.png" alt="carte velo" id="carte_slide1">
+                <img src="infos-stations.png" alt="infos stations" id="infos_stations_slide1">
+                <img src="icones/marqueur_green.png" alt="marqueur velo" id="marqueur_velo">
+
+                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
+            </div>
+            <div class="texte_slides">
+                <h2>1 - Je cherche une station ouverte</h2>
+                <p>Si le marqueur est de couleur verte, <br> la station est ouverte et contient des velos disponibles
+                </p>
+                <p>si le marqueur est de couleur orange, <br> la station est egalement ouverte mais il reste peu de
+                    vélos (2 ou moins)</p>
+                <p>Si le marqueur est de couleur rouge, <br> la station est fermée</p>
+            </div>
         </div>
         <div class="slides" id="slides_2">
-            <!----<img src="icones/icons8-pouce-en-l'air-24.png">
-                <img src="icones/icons8-pouces-vers-le-bas-24.png"> -->
-            <div id="img1" class="img">
-                <img src="icones/marqueur_green.png" alt="">
-                <p>la station est ouverte, vous pouvez reserver un velo</p>
+            <div id="images_slide2">
+                <div id="barre"></div>
+                <div id="barre_1"></div>
+                <div id="barre_2"></div>
+                <div id="barre_3"></div>
+                <div id="barre_4"></div>
+
+                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="reservation.png" alt="" id="resa_slide2">
+                <img src="carte-velo.png" alt="carte velo" id="carte_slide2">
+                <img src="infos-stations-slide2.png" alt="infos stations" id="infos_stations_slide2">
+                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
             </div>
-            <div id="img2" class="img">
-                <img src="icones/marqueur_yellow.png" alt="">
-                <p>la station est ouverte mais dépéchez vous il reste 2 velos ou moins</p>
+            <div class="texte_slides">
+                <h2>2 - les informations de la station cliqué s'affiche</h2>
+                <p>je clique sur un marqueur pour afficher : <br> - le nom de la station <br>
+                    - l'adresse de la station <br>
+                    - le nombre de velos disponible <br>
+                    - le nombre de places disponibles
+                </p>
             </div>
-            <div id="img3" class="img">
-                <img src="icones/marqueur_red.png" alt="">
-                <p>la station est soit ouverte mais avec aucun velo disponible ou fermée.</p>
-            </div>
-            <img>
         </div>
         <div class="slides" id="slides_3">
-            <img src="1_Nantes.jpg" alt="">
+            <div id="images_slide3">
+                <div id="barre"></div>
+                <div id="barre_1"></div>
+                <div id="barre_2"></div>
+                <div id="barre_3"></div>
+                <div id="barre_4"></div>
+
+                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="reservation.png" alt="" id="resa_slide3">
+                <img src="carte-velo.png" alt="carte velo" id="carte_slide3">
+                <img src="section-canvas.png" alt="signature" id="partie_canvas">
+                <img src="canvas.png" alt="" id="img_canvas">
+                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
+            </div>
+            <div class="texte_slides">
+                <h2>3 - Je réserve un velo</h2>
+                <p>Pour réserver un velo je dois signer dans le cadre blanc indiqué après avoir cliqué sur le bouton de réservation 
+                    - l'adresse de la station <br>
+                    - le nombre de velos disponible <br>
+                    - le nombre de places disponibles
+                </p>
+            </div>
         </div>
         <div class="slides" id="slides_4">
-            <img src="00-Ile-de-Nantes@SAMOA-750x302.jpg" alt="">
+            <div id="images_slide4">
+                <div id="barre"></div>
+                <div id="barre_1"></div>
+                <div id="barre_2"></div>
+                <div id="barre_3"></div>
+                <div id="barre_4"></div>
+
+                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="reservation.png" alt="" id="resa_slide4">
+                <img src="carte-velo.png" alt="carte velo" id="carte_slide4">
+                <img src="infos-stations.png" alt="infos stations" id="infos_stations_slide4">
+                <img src="icones/marqueur_green.png" alt="marqueur velo" id="marqueur_velo">
+
+                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
+            </div>
+            <div class="texte_slides">
+                <h2>3 - les informations de la station cliqué s'affiche</h2>
+                <p>je clique sur un marqueur pour afficher : <br>
+                    - le nom de la station <br>
+                    - l'adresse de la station <br>
+                    - le nombre de velos disponible <br>
+                    - le nombre de places disponibles
+                </p>
+            </div>
         </div>
+
         <div class="slides" id="slides_5">
             <img src="josselin-canal-de-nantes-brest-berthier-emmanuel-1920x1278.jpg" alt="">
         </div>
@@ -82,42 +161,50 @@
         <div id="infos_marqueurs">
             <h2 id="infos_station">Infos station</h2>
             <div class="div nom" id="div_nom">
-                    <span class="span nom" id="span_nom">Nom :</span><p class="infos nom" id="nom"></p>
+                <span class="span nom" id="span_nom">Nom :</span>
+                <p class="infos nom" id="nom"></p>
             </div>
             <div class="div adresse" id="div_adresse">
-                    <span class="span adresse" id="span_adresse"> Adresse :</span><p class="infos adresse" id="adresse"></p>
+                <span class="span adresse" id="span_adresse"> Adresse :</span>
+                <p class="infos adresse" id="adresse"></p>
             </div>
-            
+
             <div id="velos_dispo">
-                    <i class="fas fa-bicycle"></i>
-                    <p class="nombre velos" id="nombre_velos"> : </p>
+                <i class="fas fa-bicycle"></i>
+                <p class="nombre velos" id="nombre_velos"> : </p>
             </div>
-            
+
             <div id="places_dispo">
-                    <i class="fas fa-parking"></i>
-                    <p classe="nombre places" id="nombre_places"> : </p>
+                <i class="fas fa-parking"></i>
+                <p classe="nombre places" id="nombre_places"> : </p>
             </div>
             <input id="btn_resa" type="submit" value="Réserver">
+            <input id="btn_cancelResa" type="submit" value="Annuler Réservation">
             <section id="canvas_container">
-                    <h3 id="titre_resa">Réservation</h3>
-                    <p>Signez ci-dessus pour valider la réservation d'un velo</p>
-                    <canvas id="canvas">    
-                    </canvas>
-                    <button id="clear_button">effacer</button>
-                    <button id="validate_button" disabled>valider</button>
+                <h3 id="titre_resa">Réservation</h3>
+                <div id="name_firstName_resa">
+                    <input type="text" placeholder="votre nom/ your name" id="name">
+                    <input type="text" placeholder="Votre prenom/ your nickname" id="firstName">
+                </div>
+                <p>Signez ci-dessus pour valider la réservation d'un velo</p>
+                <canvas id="canvas">
+                </canvas>
+                <button id="clear_button">effacer</button>
+                <button id="validate_button" disabled>valider</button>
             </section>
         </div>
     </section>
-   
+
     <section id="resa">
         <div id="titre2_resa">
             <p><span>!</span></p>
             <h2>Votre Réservation</h2>
-        </div>
-        <span id="timer"></span><p id="infos_resa"></p>
+        </div id="infos_resa">
+        <p id="none_resa">Aucune réservation en cours !</p>
+        <p id="p_resa"></p><span id="timer"></span>
     </section>
 
-    
+
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
         integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
         crossorigin=""></script>

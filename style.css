@@ -1,46 +1,77 @@
 body{
     background: white;
+    overflow-x: hidden;
 }
 
 #menu_container{
-    background: rgb(17, 13, 5);
+    background: #0602028c;
     overflow-y: hidden;
     margin : -20px -20px;
     height: 120px;
     display: flex;
 }
 #bicycle {
-    margin: auto;
-}
+    background: wheat;
+    color: wheat;
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-left: 22px;
+    margin-left: 12px;
+    height: 100px;
+    width: 144px;}
 #bicycle img {
     width: 80px;
-    background-color: #E67E22;
-    color: #E67E22;
+    background-color: wheat;
+    border-radius: 20px;
 }
+#menu_container div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 h1{
-    color: #E67E22;
-    font-family: 'Lobster', cursive;
+        color: wheat;
+        font-family: 'Lobster', cursive;
+        font-size: 3em;
+        text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;        top: 20px;
+        text-shadow: 3px black;
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
 
 }
 
 #menu{
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: -19px;
+    justify-content: space-around;
+    align-items: center;
 }
 .menu{
-    margin-left: 50px;
-    font-family: 'Noto Sans KR', sans-serif;
-
+    font-family: 'Lobster', cursive;
+    display: flex;
+}
+.menu img{
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+.menu #Fonctionnement{
+    margin-right: 20px;
 }
 .menu a {
-    color: #E67E22;
+    color:wheat;
     text-decoration: none;
+    font-size: 1.3em;
 }
 
 .slider_container {
     
-    background: red;
+    background: white;
     width: 700px;
     height: 480px;
     /*overflow: hidden;*/
@@ -60,28 +91,191 @@ h1{
 #slides_1{
     z-index: 5;
     opacity: 1;
+    display: flex;
 }
+#slides_1 #barre{
+    background: white;
+    width: 390px;
+    height: 236px;
+    position: absolute;
+    top: 23px;
+    left: 54px;
+}
+#slides_1 #barre_2{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 441px;
+    transform: rotate(1deg);
+    top: 23px;
+    z-index: 2;
+}
+#slides_1 #barre_3{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 52px;
+    transform: rotate(-1deg);
+    top: 23px;
+    z-index: 2;
+}
+
+#slides_1 #barre_4{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: black;
+    top: 264px;
+    left: 232px;
+}
+
+#slides_1 #pc{
+    width: 500px;
+    height: 380px;
+}
+
+#slides_1 #carte_slide1{
+    width: 271px;
+    height: 190px;
+    margin-top: -361px;
+    position: absolute;
+    right: 376px;
+    box-shadow: 3px 2px 15px;
+}
+#slides_1 #resa_slide1{
+    width: 390px;
+    top: 213px;
+    height: 46px;
+    position: absolute;
+    opacity: 0.5;
+    left: 54px;
+}
+#slides_1 #infos_stations_slide1{
+    width: 120px;
+    position: absolute;
+    height: 191px;
+    background: white;
+    left: 324px;
+    top: 23px;
+    opacity: 0.5;
+}
+
+#slides_1 #marqueur_velo{
+    position: absolute;
+    width: 60px;
+    height: 51px;
+    right: 387px;
+    top: 50px;
+}
+#slides_1 #loupe {
+    position: absolute;
+    width: 92px;
+    height: 97px;
+    right: 347px;
+    top: 15px;
+    transform: rotate(-73deg)
+
+}
+#slides_1 #curseur_souris{
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 101px;
+    right: 399px;
+}
+
+#slides_2 #barre{
+    background: white;
+    width: 390px;
+    height: 236px;
+    position: absolute;
+    top: 23px;
+    left: 54px;
+}
+#slides_2 #barre_2{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 441px;
+    transform: rotate(1deg);
+    top: 23px;
+    z-index: 2;
+}
+#slides_2 #barre_3{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 52px;
+    transform: rotate(-1deg);
+    top: 23px;
+    z-index: 2;
+}
+
+#slides_2 #barre_4{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: black;
+    top: 264px;
+    left: 232px;
+}
+
+#slides_2 #pc{
+    width: 500px;
+    height: 380px;
+}
+
+#slides_2 #carte_slide2{
+    width: 271px;
+    height: 190px;
+    margin-top: -361px;
+    position: absolute;
+    right: 376px;
+    opacity: 0.4;
+}
+#slides_2 #resa_slide2{
+    width: 390px;
+    top: 213px;
+    height: 46px;
+    position: absolute;
+    opacity: 0.5;
+    left: 54px;
+}
+#slides_2 #infos_stations_slide2{
+    width: 120px;
+    position: absolute;
+    height: 191px;
+    background: white;
+    left: 324px;
+    top: 23px;
+    box-shadow: 3px 2px 15px;
+}
+#slides_2 #loupe {
+    position: absolute;
+    width: 92px;
+    height: 97px;
+    right: 245px;
+    top: 52px;
+    transform: rotate(-73deg)
+
+}
+#slides_2 #curseur_souris{
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    right: 289px;
+    top: 191px;
+}
+
 #slides_2{
     z-index: 4;
     margin-top: -480px;
-    background-color: black;
+    background-color: white;
     display: flex;
-}
-#slides_2 img{
-    left: 110px;
-    height: 70px;
-    width: 50px;
-    position: relative;
-    margin-left: 80px;
-}
-#slides_2 #img1{
-    margin-top: 60px;
-}
-#slides_2 #img2{
-    margin-top: 150px;
-}
-#slides_2 #img3{
-    margin-top: 270px;
 }
 .img p{
     color: white;
@@ -90,11 +284,197 @@ h1{
 #slides_3{
     z-index: 3;
     margin-top: -480px;
+    display: flex;
+}
+#slides_3 #barre{
+    background: white;
+    width: 390px;
+    height: 236px;
+    position: absolute;
+    top: 23px;
+    left: 54px;
+}
+#slides_3 #barre_2{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 441px;
+    transform: rotate(1deg);
+    top: 23px;
+    z-index: 2;
+}
+#slides_3 #barre_3{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 52px;
+    transform: rotate(-1deg);
+    top: 23px;
+    z-index: 2;
+}
+
+#slides_3 #barre_4{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: black;
+    top: 264px;
+    left: 232px;
+}
+
+#slides_3 #pc{
+    width: 500px;
+    height: 380px;
+}
+
+#slides_3 #carte_slide3{
+    width: 271px;
+    height: 190px;
+    margin-top: -361px;
+    position: absolute;
+    right: 376px;
+    opacity: 0.4;
+}
+#slides_3 #resa_slide3{
+    width: 390px;
+    top: 213px;
+    height: 46px;
+    position: absolute;
+    left: 54px;
+    opacity: 0.5;
+}
+#slides_3 #partie_canvas{
+    width: 124px;
+    position: absolute;
+    height: 191px;
+    background: white;
+    left: 320px;
+    top: 23px;
+    box-shadow: 3px 2px 15px;
+}
+#slides_3 #img_canvas{
+    position: absolute;
+    width: 124px;
+    height: 138px;
+    top: 75px;
+    left: 321px;
+}
+#slides_3 #loupe {
+    position: absolute;
+    width: 226px;
+    z-index: 76;
+    height: 227px;
+    right: 258px;
+    top: 18px;
+    transform: rotate(-191deg);
+}
+#slides_3 #curseur_souris{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 174px;
+    right: 288px;
 }
 #slides_4{
     z-index: 2;
-    margin-top: -480px
+    margin-top: -480px;
+    display: flex;
 }
+#slides_4 #barre{
+    background: white;
+    width: 390px;
+    height: 236px;
+    position: absolute;
+    top: 23px;
+    left: 54px;
+}
+#slides_4 #barre_2{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 441px;
+    transform: rotate(1deg);
+    top: 23px;
+    z-index: 2;
+}
+#slides_4 #barre_3{
+    width: 6px;
+    height: 236px;
+    position: absolute;
+    background: black;
+    left: 52px;
+    transform: rotate(-1deg);
+    top: 23px;
+    z-index: 2;
+}
+
+#slides_4 #barre_4{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: black;
+    top: 264px;
+    left: 232px;
+}
+
+#slides_4 #pc{
+    width: 500px;
+    height: 380px;
+}
+
+#slides_4 #carte_slide4{
+    width: 271px;
+    height: 190px;
+    margin-top: -361px;
+    position: absolute;
+    right: 376px;
+    opacity: 0.4;
+}
+#slides_4 #resa_slide4{
+    width: 390px;
+    top: 213px;
+    height: 46px;
+    position: absolute;
+    left: 54px;
+    box-shadow: 3px 2px 15px;
+}
+#slides_4 #infos_stations_slide4{
+    width: 120px;
+    position: absolute;
+    height: 191px;
+    background: white;
+    left: 324px;
+    top: 23px;
+    opacity: 0.5;
+}
+
+#slides_4 #marqueur_velo{
+    position: absolute;
+    width: 60px;
+    height: 51px;
+    right: 387px;
+    top: 50px;
+}
+#slides_4 #loupe {
+    position: absolute;
+    width: 92px;
+    height: 97px;
+    right: 347px;
+    top: 15px;
+    transform: rotate(-73deg)
+
+}
+#slides_4 #curseur_souris{
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 101px;
+    right: 399px;
+}
+
 #slides_5{
     z-index: 1;
     margin-top: -480px
@@ -162,15 +542,16 @@ h1{
 }
 
 #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-    height: 450px;
+    height: 464px;
     width: 70%;
     margin-left: 10%;
     border: 2px black solid;
     z-index: 1;
+    padding-right: 40px;
     
 }
 #infos_marqueurs{
-    background: #372F23;
+    background: #0602028c;
     border: 2px solid black;
     border-left: 0px;
     margin-left: 0px;
@@ -181,6 +562,10 @@ h1{
 #infos_station{
     color: wheat;
     text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-top: 4px;
 }
 .div{
     display: flex;
@@ -191,13 +576,17 @@ h1{
     color: wheat;
     margin-top : 0px;
 }
-span{
+.span{
     color: wheat;
     display: block;
     width: 65px;
 }
+#span_adresse{
+    width: 70px;
+}
 #adresse{
     text-transform: lowercase;
+    width: 181px;
 }
 #velos_dispo{
     display: flex;
@@ -211,7 +600,8 @@ span{
 
 .fa-bicycle{
     font-size : 28px;
-    color: #E67E22;
+    color: wheat;
+    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
 }
 
 #velos_dispo #nombre_velos{
@@ -220,12 +610,14 @@ span{
     color: wheat;
     margin: auto;
     font-weight: bold;
+    text-shadow: -1px -2px 1px black;
 }
 
 
 .fa-parking{
     font-size : 28px;
-    color: #E67E22;
+    color: wheat;
+    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
 }
 
 #places_dispo #nombre_places{
@@ -234,25 +626,46 @@ span{
     color: wheat;
     margin: auto;
     font-weight: bold;
+    text-shadow: -1px -2px 1px black;
 }
 #btn_resa, #btn_resa:focus{
     margin-top: 50px;
     color: black;
     font-size: 17px;
+    margin-left: 30%;
     width: 150px;
     height: 50px;
+    opacity: 0;
     border-radius: 4px;
     background-color: wheat;
     box-shadow: inset 0 0 0 0 #f7a130;
     -webkit-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
-
 }
 #btn_resa:hover {
     box-shadow: inset 150px 50px 0 0 #f7a130;;
     background-color:#E67E22;
 }
-
+#btn_cancelResa, #btn_cancelResa:focus{
+    position: absolute;
+    margin-top: 50px;
+    color: white;
+    font-size: 17px;
+    margin-left: 30%;
+    opacity: 0;
+    width: 197px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgb(211, 57, 57);
+    box-shadow: inset 0 0 0 0 #ec7278;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+#btn_canelResa:hover {
+    box-shadow: inset 150px 50px 0 0 #ec7278;;
+    background-color:#E67E22;
+}
+/*---------CANVAS-----------*/
 #canvas_container {
     opacity: 0;
     text-align: center;
@@ -260,6 +673,7 @@ span{
     width: 110%;
     height: 290px;
     margin-top: -350px;
+    margin-left: -9px;
     border: 4px solid black;
     box-shadow: 3px 2px 3px;
 }
@@ -269,17 +683,29 @@ span{
     border: 1px solid #000;
     background-color: white;
     border-radius: 20px;
+    margin-top: -14px;
 }
 
 #titre_resa {
 text-align: center;
-background: #E67E22;
+background: wheat;
+margin-top: 7px;
+}
+#name_firstName_resa{
+    display: flex;
+    margin-left: 27px;
+}
+#firstName{
+    margin-left: 10px;
+}
+#canvas_container p{
+margin-top: 9px;
 }
 
 
 
 #resa{
-    background: #372F23;
+    background: #0602028c;
     border-color: rgb(80, 72, 61);
     box-shadow: 2px 1px rgb(80, 72, 61);
     height: 180px;
@@ -288,32 +714,45 @@ background: #E67E22;
 }
 #titre2_resa{
     display: flex;
-    height: 35%;
-    background: #E67E22;
+    height: 27%;
+    background: wheat;
+    padding-left: 12%;
+}
+#none_resa{
+    color: wheat;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 90px;
+    font-size: 1.3em;
 }
 #titre2_resa p{
     width: 40px;
     height: 40px;
+    margin-top: 1px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid black;
+    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
     margin-left: 25%;
     
 }
 #titre2_resa p span{
-    margin-top: 6px;
+    top: 4px;
     font-size: 1.5em;
     font-weight: bold;
     margin-left: 15px;
+    position: relative;
+    color: white;
 }
 #titre2_resa h2 {
 color: black;
 text-transform: capitalize;
-margin-left: 4%;
+margin-left: 2%;
 margin-top: 0px;
-padding-top: 3%;
+padding-top: 1%;
 
 }
-#infos_resa {
+
+#p_resa {
 color:wheat;
 position: relative;
 width : 80%;
@@ -322,13 +761,8 @@ margin-top: 20px;
 line-height: 1.9;
 }
 
-#heure {
-    color: #E67E22;
-    background-color: black;
-    font-weight: bold;
-    padding: 10px;
-    position: relative;
-    top : -30%;
-    float: right;
-    text-decoration: none;
+#timer{
+    margin-left: 266px;
+    margin-top: -24px;
+    color : #E67E22
 }

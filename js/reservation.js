@@ -12,41 +12,32 @@ class Resa {
         this.finResaMin = "";
         this.finResaHours = "";
         this.sectionResaElt = document.getElementById("resa");
-        this.infosResaElt = document.getElementById("infos_resa");
+        this.infosResaElt = document.getElementById("p_resa");
+        this.cancelResaElt = document.getElementById("btn_cancelResa");
         this.timer = "";
+        this.noneResa = document.getElementById("none_resa");
     }
     init() {
-        this.valideResa();
-        console.log(canvas.validSign) 
         let evenement = this.validateButton.addEventListener("click", this.eventButtonValidate.bind(this))
-        window.addEventListener("load", this.loadWindow.bind(this));
+        this.cancelResaElt.addEventListener("click", this.endResa.bind(this));
+        window.addEventListener("load", this.loadWindow.bind(this));     
+       // this.endResa();   
+    }
 
-        
-    }
-    valideResa(){ 
-        console.log(canvas.mousePosition)
-        if (canvas.validSign === true){
-            //alert("vous de devez signez dans le cadre réservé");
-            console.log("salut");  
-        }
-      
-        else {
-        }
-    }
     // enregistre les informations de reservation d'un velo
-    InfosStationResa() {
-        sessionStorage.setItem("adresse", this.adresseElt.textContent);
-        sessionStorage.setItem("nom", this.nomStationElt.textContent);
-        if (sessionStorage.length != 0) {
-        }
+     
+        InfosStationResa() {
+            sessionStorage.setItem("adresse", this.adresseElt.textContent);
+            sessionStorage.setItem("nom", this.nomStationElt.textContent);
+        let dataNom = sessionStorage.getItem("nom");
+        console.log(dataNom);
     }
     eventButtonValidate() {
         this.time = 1200;
-        this.InfosStationResa();
         this.heureFinResa();
+        this.InfosStationResa();
         this.recoversInfosResa();
         this.startTimer();
-        //this.validateButton.setAttribute("disabled", "disabled");
     }
     // création de l'heure de fin de resa
     heureFinResa() {
@@ -74,12 +65,17 @@ class Resa {
     };
     //on affiche les infos de fin de resa enregistrer dans la session 
     recoversInfosResa() {
+        this.InfosStationResa();
+        console.log("recoverInfosResa")
         let dataNom = sessionStorage.getItem("nom");
         let dataAdresse = sessionStorage.getItem("adresse");
         let finResaSec = sessionStorage.getItem("finResaSec");
         let finResaMin = sessionStorage.getItem("finResaMin");
         let finResaHours = sessionStorage.getItem("finResaHours");
-        this.infosResaElt.textContent = "vous avez réservé un velo à la station " + dataNom + " : veuillez vous rendre a(u)" + dataAdresse + " avant " + finResaHours + " h " + finResaMin + " min " + finResaSec + " s !! " + "il sera réservé pendant les 20 prochaines minutes..";
+        this.infosResaElt.textContent = "Vous avez réservé un velo à la station " + dataNom + " : veuillez vous rendre a(u)" + dataAdresse + " avant " + finResaHours + " h " + finResaMin + " min \n Votre réservation se terminera dans "
+        this.noneResa.textContent = "";
+        console.log(dataNom);
+       
     }
     // construction du Timer
     createTimer() {
@@ -101,34 +97,51 @@ class Resa {
         let getTimeSec = sessionStorage.getItem("sec");
         this.timerElt = document.getElementById("timer");
 
-        if (this.time === 1190) {
+        if (this.time === 1040) {
             this.validResa = false;
-            this.stopTimer();
-            sessionStorage.clear();
             this.time = 1200;
-            this.timerElt.textContent = "";
-            this.infosResaElt.textContent = "";
+            this.endResa();
+
         }
         if (this.time > 0 && this.time < 1200) {
+            console.log(this.validResa)
+            this.validResa = true;
+            sessionStorage.setItem("validResa", this.validResa)
             this.timerElt.textContent = getTimeMin + "min" + getTimeSec + "sec";
-            this.recoversInfosResa();
+            console.log(this.validResa);
         } else {
             this.stopTimer();
         }
     };
+endResa(){ 
+    this.stopTimer();
+    sessionStorage.clear();
+    this.removeInfosResa();
+    this.btnResa = document.getElementById("btn_resa");
+    this.btnResa.style.opacity = "1";
+    this.cancelResaElt = document.getElementById("btn_cancelResa")
+    this.cancelResaElt.style.opacity ="0";
+    this.cancelResaElt.style.right = "-10%";
+    this.noneResa.textContent = "Aucune Réservation en cours !";
+}
     // Lance le timer
     startTimer() {
         this.timer = setInterval(this.createTimer.bind(this), 1000);
+        this.validResa = true;
     }
     stopTimer() {
         clearInterval(this.timer);
     }
+    //--vider les infos de réservations--//
+    removeInfosResa(){
+        this.timerElt.textContent = "";
+        this.infosResaElt.textContent = "";
+    }
     loadWindow() {
         if (sessionStorage != 0) {
             this.time = sessionStorage.getItem("time");
-            maResa.startTimer();
-            //maResa.recoversInfosResa();
-                }
+            maResa.startTimer();                      
+        }
     }
 
 }
