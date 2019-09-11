@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Bicloo à Nantes</title>
+    <title>Bike City Nantes</title>
 </head>
 
 <body>
@@ -20,25 +20,26 @@
         <div id="bicycle"><img src="icones/bicycle.png" alt="cycliste">
         </div>
         <div>
-        <h1>Bike City Nantes</h1>
-        
-        <ul id="menu">
-            <li class="menu">
-                <img src="icones/icons8-manuel-utilisateur-50.png" alt="icone manuel utilisateur" id="Fonctionnement">
-                <a href="#slider_container">fonctionnement</a>
-            </li>
-            <li class="menu">
-                <img src="icones/icons8-marqueur-40.png" alt="icone marqueur" id="Marker">
-                <a href="#map_container">Sélectionner une station</a>
-            </li>
-            <li class="menu">
-                <img src="icones/icons8-réservation-50.png" alt="icone réservation" id="Resa">
-                <a href="#container_canvas">Réservation</a>
-            </li>
-        </ul>
+            <h1>Bike City Nantes</h1>
+
+            <ul id="menu">
+                <li class="menu">
+                    <img src="icones/icons8-manuel-utilisateur-50.png" alt="icone manuel utilisateur"
+                        id="Fonctionnement">
+                    <a href="#slider_container">fonctionnement</a>
+                </li>
+                <li class="menu">
+                    <img src="icones/icons8-marqueur-40.png" alt="icone marqueur" id="Marker">
+                    <a href="#map_container">Sélectionner une station</a>
+                </li>
+                <li class="menu">
+                    <img src="icones/icons8-réservation-50.png" alt="icone réservation" id="Resa">
+                    <a href="#resa">Réservation</a>
+                </li>
+            </ul>
         </div>
     </header>
-    <section class="slider_container">
+    <section id="slider_container">
         <div class="slides" id="slides_1">
             <div id="images_slide1">
                 <div id="barre"></div>
@@ -47,13 +48,13 @@
                 <div id="barre_3"></div>
                 <div id="barre_4"></div>
 
-                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
-                <img src="reservation.png" alt="" id="resa_slide1">
-                <img src="carte-velo.png" alt="carte velo" id="carte_slide1">
-                <img src="infos-stations.png" alt="infos stations" id="infos_stations_slide1">
+                <img src="image/9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="image/reservation.png" alt="" id="resa_slide1">
+                <img src="image/carte-velo.png" alt="carte velo" id="carte_slide1">
+                <img src="image/infos-stations.png" alt="infos stations" id="infos_stations_slide1">
                 <img src="icones/marqueur_green.png" alt="marqueur velo" id="marqueur_velo">
 
-                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="image/loupe.png" alt="loupe" id="loupe">
                 <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
             </div>
             <div class="texte_slides">
@@ -73,11 +74,11 @@
                 <div id="barre_3"></div>
                 <div id="barre_4"></div>
 
-                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
-                <img src="reservation.png" alt="" id="resa_slide2">
-                <img src="carte-velo.png" alt="carte velo" id="carte_slide2">
-                <img src="infos-stations-slide2.png" alt="infos stations" id="infos_stations_slide2">
-                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="image/9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="image/reservation.png" alt="" id="resa_slide2">
+                <img src="image/carte-velo.png" alt="carte velo" id="carte_slide2">
+                <img src="image/infos-stations-slide2.png" alt="infos stations" id="infos_stations_slide2">
+                <img src="image/loupe.png" alt="loupe" id="loupe">
                 <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
             </div>
             <div class="texte_slides">
@@ -97,20 +98,21 @@
                 <div id="barre_3"></div>
                 <div id="barre_4"></div>
 
-                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
-                <img src="reservation.png" alt="" id="resa_slide3">
-                <img src="carte-velo.png" alt="carte velo" id="carte_slide3">
-                <img src="section-canvas.png" alt="signature" id="partie_canvas">
-                <img src="canvas.png" alt="" id="img_canvas">
-                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="image/9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="image/reservation.png" alt="" id="resa_slide3">
+                <img src="image/carte-velo.png" alt="carte velo" id="carte_slide3">
+                <img src="image/section-canvas.png" alt="signature" id="partie_canvas">
+                <img src="image/canvas.png" alt="" id="img_canvas">
+                <img src="image/loupe.png" alt="loupe" id="loupe">
                 <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
             </div>
             <div class="texte_slides">
                 <h2>3 - Je réserve un velo</h2>
-                <p>Pour réserver un velo je dois signer dans le cadre blanc indiqué après avoir cliqué sur le bouton de réservation 
-                    - l'adresse de la station <br>
-                    - le nombre de velos disponible <br>
-                    - le nombre de places disponibles
+                <p>Pour réserver un velo je dois :</p>
+                <ul>
+                    <li>Signer dans le cadre blanc indiqué après avoir cliqué sur le bouton de réservation </li>
+                    <li>Inscrire mon Nom et mon Prenom</li>
+                </ul>
                 </p>
             </div>
         </div>
@@ -122,17 +124,43 @@
                 <div id="barre_3"></div>
                 <div id="barre_4"></div>
 
-                <img src="9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
-                <img src="reservation.png" alt="" id="resa_slide4">
-                <img src="carte-velo.png" alt="carte velo" id="carte_slide4">
-                <img src="infos-stations.png" alt="infos stations" id="infos_stations_slide4">
-                <img src="icones/marqueur_green.png" alt="marqueur velo" id="marqueur_velo">
-
-                <img src="loupe.png" alt="loupe" id="loupe">
+                <img src="image/9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="image/reservation2.png" alt="" id="resa_slide4">
+                <img src="image/resa_zoom.png" alt="zoom zone réservation" id="resa_zoom">
+                <img src="image/carte-velo.png" alt="carte velo" id="carte_slide4">
+                <img src="image/infos-stations.png" alt="infos stations" id="infos_stations_slide4">
+                <img src="image/loupe.png" alt="loupe" id="loupe">
                 <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
             </div>
             <div class="texte_slides">
-                <h2>3 - les informations de la station cliqué s'affiche</h2>
+                <h2>4 - mes informations de réservations</h2>
+                <p> le nom, l'adresse et l'heure de fin de réservation sont disponible dans la
+                    zone de réservation </p>
+                <p>
+                    la réservation de votre velo s'annulera au bout de 20 minutes si vous ne venez pas le récupérer à la
+                    station choisie.
+                </p>
+            </div>
+        </div>
+
+        <div class="slides" id="slides_5">
+            <div id="images_slide5">
+                <div id="barre"></div>
+                <div id="barre_1"></div>
+                <div id="barre_2"></div>
+                <div id="barre_3"></div>
+                <div id="barre_4"></div>
+
+                <img src="image/9296560_6-removebg-preview.png" alt="ordinateur portable" id="pc">
+                <img src="image/reservation2.png" alt="" id="resa_slide5">
+                <img src="image/carte-velo.png" alt="carte velo" id="carte_slide5">
+                <img src="image/annuler_resa.png" alt="partie annuler réservation" id="annuler_resa_slide5">
+
+                <img src="image/loupe.png" alt="loupe" id="loupe">
+                <img src="icones/icons8-curseur-24.png" alt="curseur de souris" id="curseur_souris">
+            </div>
+            <div class="texte_slides">
+                <h2>5 - les informations de la station cliqué s'affiche</h2>
                 <p>je clique sur un marqueur pour afficher : <br>
                     - le nom de la station <br>
                     - l'adresse de la station <br>
@@ -140,18 +168,16 @@
                     - le nombre de places disponibles
                 </p>
             </div>
+
         </div>
 
-        <div class="slides" id="slides_5">
-            <img src="josselin-canal-de-nantes-brest-berthier-emmanuel-1920x1278.jpg" alt="">
-        </div>
         <div id="arrow">
             <button id="fa-angle-left"><i class="fas fa-angle-left"></i></button>
             <button id="fa-angle-right"><i class="fas fa-angle-right"></i></button>
         </div>
         <div id="play_pause">
-            <button id="pause"><i class="far fa-pause-circle"></i></button>
-            <button id="play"><i class="far fa-play-circle"></i></button>
+            <button id="pause"><i class="fas fa-pause"></i></button>
+            <button id="play"><i class="fas fa-play"></i></button>
         </div>
     </section>
     <section id="map_container">
@@ -182,26 +208,33 @@
             <input id="btn_cancelResa" type="submit" value="Annuler Réservation">
             <section id="canvas_container">
                 <h3 id="titre_resa">Réservation</h3>
-                <div id="name_firstName_resa">
-                    <input type="text" placeholder="votre nom/ your name" id="name">
-                    <input type="text" placeholder="Votre prenom/ your nickname" id="firstName">
-                </div>
-                <p>Signez ci-dessus pour valider la réservation d'un velo</p>
-                <canvas id="canvas">
-                </canvas>
-                <button id="clear_button">effacer</button>
-                <button id="validate_button" disabled>valider</button>
+                <form>
+                    <div id="div_name_resa">
+                        <label for="name">Nom :</label>
+                        <input type="text" placeholder="votre nom" id="name" name="name" re>
+                    </div>
+                    <div id="div_firstName_resa">
+                        <label for="firstName">Prénom :</label>
+                        <input type="text" placeholder="Votre prenom" id="firstName" name="firstName">
+                    </div>
+                    <p>Signez ci-dessus pour valider la réservation d'un velo</p>
+                    <canvas id="canvas" disabled>;
+                    </canvas>
+                    <input id="clear_button" value="effacer" type="button">
+                    <input id="validate_button" value="valider" type="submit" disabled>
+                </form>
             </section>
         </div>
     </section>
 
     <section id="resa">
-        <div id="titre2_resa">
+        <div id="div_titre_resa">
             <p><span>!</span></p>
-            <h2>Votre Réservation</h2>
+            <h2 id="titre">Réservation (0)</h2>
         </div id="infos_resa">
         <p id="none_resa">Aucune réservation en cours !</p>
-        <p id="p_resa"></p><span id="timer"></span>
+        <p id="p_resa"></p>
+        <p id="p2_resa">Votre réservation se terminera dans <span id="timer"></span></p>
     </section>
 
 

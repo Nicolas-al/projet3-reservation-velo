@@ -1,4 +1,3 @@
-
 class Slider {
     constructor() {
         this.slides = document.getElementsByClassName("slides");
@@ -19,7 +18,7 @@ class Slider {
     this.clickPause = this.pause.addEventListener("click", this.pauseSlides.bind(this));
     document.addEventListener("keydown", this.clavier.bind(this));
 };
-//---délilement des slides---//
+    //---délilement des slides---//
     scrollSlides() {
            this.slides[this.index].style.opacity = 0;
            this.index;
@@ -30,12 +29,10 @@ class Slider {
                 this.index = 0;
                 }
              this.slides[this.index].style.opacity = 1;
-          
         }
     //---Image suivante---//    
     nextImage() {
         clearInterval(this.lectureAuto);
-
         this.slides[this.index].style.opacity = 0;
         this.index++;
         if (this.index > 4){
@@ -43,7 +40,6 @@ class Slider {
         }
         this.slides[this.index].style.opacity = 1;
         this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
-
     }
     //---Image précédente---//
     previousImage() {
