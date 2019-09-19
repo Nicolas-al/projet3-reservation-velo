@@ -8,11 +8,11 @@ function ajaxGet(url, callback) {
             // Appelle la fonction callback en lui passant la réponse de la requête
             callback(req.responseText);
         } else {
-            console.error(req.status + " " + req.statusText + " " + url);
+           // console.error(req.status + " " + req.statusText + " " + url);
         }
     });
     req.addEventListener("error", function () {
-        console.error("Erreur réseau avec l'URL " + url);
+        // console.error("Erreur réseau avec l'URL " + url);
     });
     req.send(null);
 }
@@ -28,12 +28,12 @@ function ajaxPost(url, data, callback, isJson) {
             // Appelle la fonction callback en lui passant la réponse de la requête
             callback(req.responseText);
         } else {
-            console.error(req.status + " " + req.statusText + " " + url);
+            //console.error(req.status + " " + req.statusText + " " + url);
         }
     });
-    req.addEventListener("error", function () {
+    /*req.addEventListener("error", function () {
         console.error("Erreur réseau avec l'URL " + url);
-    });
+    });*/
     if (isJson) {
         // Définit le contenu de la requête comme étant du JSON
         req.setRequestHeader("Content-Type", "application/json");

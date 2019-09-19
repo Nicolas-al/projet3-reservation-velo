@@ -12,10 +12,10 @@ class Slider {
     };
     init() { 
     this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);  
-    this.clickNextImage = this.arrowRight.addEventListener("click", this.nextImage.bind(this));
-    this.clickPreviousImage = this.arrowLeft.addEventListener("click", this.previousImage.bind(this));
-    this.clickPlay = this.play.addEventListener("click", this.playSlides.bind(this));
-    this.clickPause = this.pause.addEventListener("click", this.pauseSlides.bind(this));
+    this.clickNextImage = this.arrowRight.addEventListener("click", this.goNextImage.bind(this));
+    this.clickPreviousImage = this.arrowLeft.addEventListener("click", this.goPreviousImage.bind(this));
+    this.clickPlay = this.play.addEventListener("click", this.startSlides.bind(this));
+    this.clickPause = this.pause.addEventListener("click", this.stopSlides.bind(this));
     document.addEventListener("keydown", this.clavier.bind(this));
 };
     //---délilement des slides---//
@@ -31,7 +31,7 @@ class Slider {
              this.slides[this.index].style.opacity = 1;
         }
     //---Image suivante---//    
-    nextImage() {
+    goNextImage() {
         clearInterval(this.lectureAuto);
         this.slides[this.index].style.opacity = 0;
         this.index++;
@@ -42,7 +42,7 @@ class Slider {
         this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
     }
     //---Image précédente---//
-    previousImage() {
+    goPreviousImage() {
         clearInterval(this.lectureAuto);
         this.slides[this.index].style.opacity = 0;
         this.index--;
@@ -53,11 +53,11 @@ class Slider {
         this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
     }
     //---pause du défilement des slides---//
-    pauseSlides() {
+    stopSlides() {
         clearInterval(this.lectureAuto);
     }
     //---demarrer défilement des slides--//
-    playSlides() {
+    startSlides() {
         clearInterval(this.lectureAuto);
         this.lectureAuto = setInterval(this.scrollSlides.bind(this), this.duration);
     }

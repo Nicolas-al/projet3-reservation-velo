@@ -37,15 +37,12 @@ h1{
         color: wheat;
         font-family: 'Lobster', cursive;
         font-size: 3em;
-        text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;        top: 20px;
-        text-shadow: 3px black;
+        text-shadow: 0 0 3px #da1414, 0 0 5px black;
         margin-top: 5px;
         width: 100%;
         text-align: center;
-
 }
-
-#menu{
+nav{
     display: flex;
     list-style-type: none;
     width: 100%;
@@ -100,7 +97,7 @@ h1{
     opacity: 1;
     display: flex;
 }
-#slides_1 #barre{
+.barre{
     background: white;
     width: 390px;
     height: 236px;
@@ -108,7 +105,7 @@ h1{
     top: 23px;
     left: 54px;
 }
-#slides_1 #barre_2{
+.barre_2{
     width: 6px;
     height: 236px;
     position: absolute;
@@ -118,7 +115,7 @@ h1{
     top: 23px;
     z-index: 2;
 }
-#slides_1 #barre_3{
+.barre_3{
     width: 6px;
     height: 236px;
     position: absolute;
@@ -129,7 +126,7 @@ h1{
     z-index: 2;
 }
 
-#slides_1 #barre_4{
+.barre_4{
     position: absolute;
     width: 40px;
     height: 15px;
@@ -193,44 +190,6 @@ h1{
     right: 399px;
 }
 /*------------1.2----SLIDE 2--------------*/
-
-#slides_2 #barre{
-    background: white;
-    width: 390px;
-    height: 236px;
-    position: absolute;
-    top: 23px;
-    left: 54px;
-}
-#slides_2 #barre_2{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 441px;
-    transform: rotate(1deg);
-    top: 23px;
-    z-index: 2;
-}
-#slides_2 #barre_3{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 52px;
-    transform: rotate(-1deg);
-    top: 23px;
-    z-index: 2;
-}
-
-#slides_2 #barre_4{
-    position: absolute;
-    width: 40px;
-    height: 15px;
-    background: black;
-    top: 264px;
-    left: 232px;
-}
 
 #slides_2 #pc{
     width: 500px;
@@ -296,44 +255,6 @@ h1{
     margin-top: -480px;
     display: flex;
 }
-#slides_3 #barre{
-    background: white;
-    width: 390px;
-    height: 236px;
-    position: absolute;
-    top: 23px;
-    left: 54px;
-}
-#slides_3 #barre_2{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 441px;
-    transform: rotate(1deg);
-    top: 23px;
-    z-index: 2;
-}
-#slides_3 #barre_3{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 52px;
-    transform: rotate(-1deg);
-    top: 23px;
-    z-index: 2;
-}
-
-#slides_3 #barre_4{
-    position: absolute;
-    width: 40px;
-    height: 15px;
-    background: black;
-    top: 264px;
-    left: 232px;
-}
-
 #slides_3 #pc{
     width: 500px;
     height: 380px;
@@ -395,44 +316,6 @@ h1{
     margin-top: -480px;
     display: flex;
 }
-#slides_4 #barre{
-    background: white;
-    width: 390px;
-    height: 236px;
-    position: absolute;
-    top: 23px;
-    left: 54px;
-}
-#slides_4 #barre_2{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 441px;
-    transform: rotate(1deg);
-    top: 23px;
-    z-index: 2;
-}
-#slides_4 #barre_3{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 52px;
-    transform: rotate(-1deg);
-    top: 23px;
-    z-index: 2;
-}
-
-#slides_4 #barre_4{
-    position: absolute;
-    width: 40px;
-    height: 15px;
-    background: black;
-    top: 264px;
-    left: 232px;
-}
-
 #slides_4 #pc{
     width: 500px;
     height: 380px;
@@ -506,44 +389,6 @@ h1{
     margin-top: -480px;
     display: flex;
 }
-#slides_5 #barre{
-    background: white;
-    width: 390px;
-    height: 236px;
-    position: absolute;
-    top: 23px;
-    left: 54px;
-}
-#slides_5 #barre_2{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 441px;
-    transform: rotate(1deg);
-    top: 23px;
-    z-index: 2;
-}
-#slides_5 #barre_5{
-    width: 6px;
-    height: 236px;
-    position: absolute;
-    background: black;
-    left: 52px;
-    transform: rotate(-1deg);
-    top: 23px;
-    z-index: 2;
-}
-
-#slides_5 #barre_4{
-    position: absolute;
-    width: 40px;
-    height: 15px;
-    background: black;
-    top: 264px;
-    left: 232px;
-}
-
 #slides_5 #pc{
     width: 500px;
     height: 380px;
@@ -622,12 +467,11 @@ h1{
 #fa-angle-left{
     position: relative;
     z-index: 6;
-    margin-left:  -47px;
-    margin-top: 0;
-    height: 40px;
-    width: 30px;
+    margin-left:  -18px;
+    margin-top: -41px;
     color: #9e9e9ec9;
     border: none;
+    background: white;
 }
 
 #fa-angle-left:focus{
@@ -635,25 +479,23 @@ h1{
     color : orange;
 }
 .fa-angle-left{
-    font-size: 100px;
-    margin-top: -83px;
+    font-size: 81px;
 }
 #fa-angle-right{
     position: absolute;  
     z-index: 6;
     right: -35px;
-    margin-top: 0;
-    width: 30px;
+    margin-top: -41px;
     color: #9e9e9ec9;
     border:none;
+    background: white;
 }
 #fa-angle-right:focus{
     outline-color: white;
     color : orange;
 }
 .fa-angle-right{
-    font-size: 100px;
-    margin-top: -83px;
+    font-size: 81px;
 }
 
 #play_pause{
@@ -667,20 +509,19 @@ h1{
 #pause{
     color: #9e9e9ec9;
     border: none;
-    width: 40px;
+    background: white;
 }
 #pause:focus{
     outline-color: white;
     color : orange;
 }
 .fa-pause{
-    font-size: 54px;
+    font-size: 45px;
 }
 #play{
     color: #9e9e9ec9;
     border: none;
-    width: 40px;
-    height: 30px;
+    background: white;
     margin-left: 50px;
 }
 #play:focus{ 
@@ -689,12 +530,10 @@ h1{
 
 }
 .fa-play{
-    font-size: 54px;
+    font-size: 43px;
 }
-
 /*---------------------Conteneur MAP/INFOS STATIONS------------------------------*/
 /*--------------------                              -----------------------------*/
-
 
 /*-----------------------------------1----MAP-----------------------------------*/
 
@@ -723,7 +562,7 @@ h1{
     padding-left : 33px;
     padding-right: 40px;
 }
-.infosMarqueurs{
+.infos_marqueurs{
     background: #0602028c;
     border: 2px solid black;
     border-left: 0px;
@@ -740,17 +579,15 @@ h1{
     text-decoration: underline;
     margin-top: 4px;
 }
-.infosMarqueurs #infos_station{
+.infos_marqueurs #infos_station{
     margin-bottom: 8px;
 }
-
-
 .div{
     display: flex;
     margin-top: 30px;
     width: 100%;
 }
-.infosMarqueurs .div{
+.infos_marqueurs .div{
     margin-top: 0;
     width: 110%;
     display: flex;
@@ -773,41 +610,49 @@ h1{
     text-transform: lowercase;
     width: 100%;
 }
-.VelosPlacesDispo{
+.infos_marqueurs #velos_places_dispo{
     display: flex;
+    position: absolute;
+    right: 71px;
+    margin-top: -5px;
 }
-.VelosPlacesDispo #velos_dispo #nombre_velos{
+.infos_marqueurs #velos_places_dispo #velos_dispo #nombre_velos{
     margin-left : 5px;
     color : #3a3a36d6;
     font-size : 1.2em;
     text-shadow: 0px 0px 0px;
 }
-.VelosPlacesDispo #places_dispo #nombre_places{
+.infos_marqueurs #velos_places_dispo #places_dispo #nombre_places{
     color : #3a3a36d6;
     margin-left : 5px;
     font-size : 1.2em;
     text-shadow: 0px 0px 0px;
 }
-.VelosPlacesDispo #velos_dispo{
+.infos_marqueurs #velos_places_dispo #velos_dispo{
     margin: 10px 40px 0px 64px;
 }
-.VelosPlacesDispo #places_dispo{
+.infos_marqueurs #velos_places_dispo #places_dispo{
     margin-top: 10px;
 }
 #velos_dispo{
     display: flex;
     margin-top: 30px;
 }
-
+.infos_marqueurs #velos_dispo{
+    opacity: 1;
+}
 #places_dispo{
     display: flex;
     margin-top: 30px;
+}
+.infos_marqueurs #places_dispo{
+    opacity: 1;
 }
 
 .fa-bicycle{
     font-size : 28px;
     color: wheat;
-    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
+    text-shadow: 0 0 5px black, 0 0 3px #da1414;
 }
 
 #velos_dispo #nombre_velos{
@@ -823,7 +668,7 @@ h1{
 .fa-parking{
     font-size : 28px;
     color: wheat;
-    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
+    text-shadow: 0 0 5px black, 0 0 3px #da1414;
 }
 
 #places_dispo #nombre_places{
@@ -835,6 +680,11 @@ h1{
     text-shadow: -1px -2px 1px black;
 }
 /*--btn de réservation et d'annulation de la Resa--*/
+.infos_marqueurs #btn_resa{
+    opacity: 0;
+    position: relative;
+    left: 94%;    
+}
 
 #btn_resa, #btn_resa:focus{
     margin-top: 50px;
@@ -855,7 +705,12 @@ h1{
     background-color:#2f2e2bbf;
     color: black;
 }
-#btn_cancelResa, #btn_cancelResa:focus{
+.infos_marqueurs #btn_cancel_resa{
+    opacity: 0;
+    position: relative;
+    left: 94%;   
+}
+#btn_cancel_resa, #btn_cancel_resa:focus{
     position: absolute;
     margin-top: 50px;
     color: white;
@@ -870,7 +725,7 @@ h1{
     -webkit-transition: all 0.8s ease-in-out;
     transition: all 0.8s ease-in-out;
 }
-#btn_cancelResa:hover {
+#btn_cancel_resa:hover {
     box-shadow: inset 150px 50px 0 0 #ec7278;;
     background-color:#E67E22;
 }
@@ -886,24 +741,25 @@ h1{
     border: 4px solid black;
     box-shadow: 0px 0px 7px;
 }
-.canvasContainer{
+.infos_marqueurs #canvas_container{
     text-align: center;
+    z-index: 2;
     background: white;
     width: 123%;
     height: 335px;
     opacity: 1;
     margin-left : -27px;
-    margin-top: -9px;
+    margin-top: -210px;
     border: 4px solid black;
     box-shadow: 0px 0px 7px;
 }
-.canvasContainer #infos_station{
+.infos_marqueurs #canvas_container #infos_station{
     margin-top: 5px;
 }
-.canvasContainer #div_nom{
+.infos_marqueurs #canvas_container #div_nom{
     margin-top: -5px;
 }
-.canvasContainer #div_adresse{
+.infos_marqueurs #canvas_container #div_adresse{
     margin-top: 5px;
 
 }
@@ -918,17 +774,17 @@ h1{
 #cdt_sign{
     background: #d21414de;
     color: aliceblue;
-    width: 204px;
+    width: 212px;
     border-radius: 6px;
     position: absolute;
-    margin-left: 34px;
+    margin-left: 4.5%;
     margin-top: -110px;
 }
 
 #titre_resa {
 text-align: center;
 background: wheat;
-margin-top: 7px;
+margin-top: 50px;
 }
 #div_name_resa{ 
 margin-top: -7px;
@@ -943,12 +799,11 @@ margin-top: 8px;
 #div_firstName_resa label{
     margin-left: -15px;
 }
-
-#canvas_container p{
+#canvas_container form p{
 margin-top: 9px;
 width: 99%;
 }
-.canvasContainer p{
+.infos_marqueurs #canvas_container form p{
     margin-top: 9px;
     width: 99%;
 }
@@ -983,7 +838,7 @@ width: 99%;
     margin-top: 1px;
     border-radius: 50%;
     border: 2px solid black;
-    text-shadow: 0 0 29px #0a0a0ae6, 0 0 2px #040303, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #15110e, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60, 0 0 2px #d60;
+    text-shadow: 0 0 5px black, 0 0 3px #da1414;
     margin-left: 25%;
     
 }
@@ -1002,7 +857,6 @@ margin-left: 2%;
 margin-top: 0px;
 padding-top: 1%;
 }
-
 #p_resa {
 color:wheat;
 position: relative;
@@ -1018,7 +872,6 @@ line-height: 1.9;
     color: wheat;
     opacity: 0;
 }
-
 #timer{
     margin-top: -24px;
     color: #f5a836e8;
